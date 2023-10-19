@@ -1,0 +1,185 @@
+/*Вигляд таблиці*/
+table {
+    border-collapse: separate;
+    width: 50%;
+    border-spacing: 0;
+    border: 1px solid black;
+    /*margin: 0 auto;*/
+}
+/*Вигляд комірок*/
+td {
+    border: 1px solid black;
+    text-align: center;
+    height: 25px;
+}
+
+/* CSS для 1-го рядка */
+tr:nth-child(1) {
+    background-color: #308f8f;
+    color: #000
+}
+
+/* CSS для 2-го рядка */
+tr:nth-child(2) {
+    background-color: #f5f530; 
+    color: #000;
+}
+/*Змінювання кольорів при наведенні курсору*/
+tr:nth-child(1):hover {
+    background-color: #323232; 
+    color: #fff
+}
+tr:nth-child(2):hover {
+    background-color: #323232; 
+    color: #fff
+  }
+
+/*Позиціонування перегородки комірки*/
+.table-cell {
+    position: relative;
+    padding: 0;
+}
+
+  
+.divider {
+    position: absolute;
+    width: 1px; 
+    background-color: #000; 
+    top: 0;
+    bottom: 0;
+    left: 50%; /* Центруємо перегородку в комірці відносно лівого краю*/
+    transform: translateX(-50%); /* Точність центрування незалежно від розміру комірки */
+}
+/*Для можливості запису тексту по обидві сторони*/
+.left-part {
+    float: left; /* Розташовуємо ліву частину ліворуч */
+    width: 50%; /* Ширина лівої частини (половина комірки) */
+    text-align: center;
+}
+  
+.right-part {
+    float: right; /* Розташовуємо праву частину праворуч */
+    width: 50%; /* Ширина правої частини (половина комірки) */
+    text-align: center;
+}
+ 
+  /*----POSITION----*/
+   /*Контейнер*/
+  .gayka {
+    position: relative;
+    width: 300px;
+    height: 300px;
+
+  }
+  
+  .circleBig {
+    position: absolute;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: #7f7a7a; 
+    top: 50px;
+    left: 50px;
+  }
+  .circleMid{
+    position: absolute;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff; 
+    top: 110px;
+    left: 110px;
+  }
+
+  .circles {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+  }
+  
+  /*Позиціонування маленьких кіл*/
+  .one {
+    top: 25px;
+    left: 125px;
+  }
+  .two {
+    top: 125px;
+    left: 25px;
+  }
+  .three {
+    top: 225px;
+    left: 125px;
+  }
+  .four {
+    top: 125px;
+    left: 225px;
+  }
+  .five {
+    top: 50px;
+    left: 50px;
+  }
+  .six {
+    top: 50px;
+    left: 200px;
+  }
+  .seven {
+    top: 200px;
+    left: 50px;
+  }
+  .eight {
+    top: 200px;
+    left: 200px;
+  }
+
+  /*----TRANSFORM---*/
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  /*Основне коло для гайки*/
+  .circle.base {
+    background-color: #7f7a7a; 
+    transform: translate(50px, 0); 
+  }
+  /*Середина гайки*/
+  .circle.mid {
+    background-color: #ffffff; 
+    transform: scale(0.4) translate(130px, 0); 
+  }
+
+  .circle.small1 {
+    background-color: #ffffff; 
+    transform: scale(0.25) translate(-200px, 0); 
+  }
+  .circle.small2 {
+    background-color: #ffffff; 
+    transform: scale(0.25) translate(600px, 0); 
+  }
+  .circle.small3 {
+    background-color: #ffffff; 
+    transform: scale(0.25) translate(200px, -400px); 
+  }
+  .circle.small4 {
+    background-color: #ffffff; 
+    transform: scale(0.25) translate(200px, 400px); 
+  }
+  .circle.small5 {
+    background-color: #ffffff; 
+    transform: scale(0.25) translate(500px, -300px); 
+  }
+  .circle.small6 {
+    background-color: #ffffff; 
+    transform: scale(0.25) translate(-100px, -300px); 
+  }
+  .circle.small7 {
+    background-color: #ffffff; 
+    transform: scale(0.25) translate(500px, 300px); 
+  }
+  .circle.small8 {
+    background-color: #ffffff; 
+    transform: scale(0.25) translate(-100px, 300px); 
+  }
